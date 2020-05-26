@@ -17,6 +17,7 @@ function copyFile() {
       stream: true,
     }),
   );
+  console.log("debug 1")
 }
 
 function layoutHTML() {
@@ -79,13 +80,14 @@ function vendorsJs() {
 }
 
 
-function browser() {
+function Mybrowser() {
   browserSync.init({
     server: {
       baseDir: envOptions.browserSetting.dir,
     },
     port: envOptions.browserSetting.port,
   });
+  console.log("<---------------------------------------- 1   ")
 }
 
 function clean() {
@@ -115,4 +117,4 @@ exports.clean = clean;
 
 exports.build = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs);
 
-exports.default = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs, gulp.parallel(browser, watch));
+exports.default = gulp.series(clean, copyFile, layoutHTML, sass, babel, vendorsJs, gulp.parallel(Mybrowser, watch));

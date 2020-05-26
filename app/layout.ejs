@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style/all.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title><%- title %></title>
 
-    <%- contents %>
+  <!-- Googl Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <!-- 輪播 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/css/swiper.min.css">
+  <!-- 主要的 CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- 套件 -->
+  <script src="./assets/js/vendors.js"></script>
+  <!-- 輪播 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js"></script>
+  <!-- 主要的 JS -->
+  <script src="./assets/js/all.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-  </body>
+</head>
+
+<body>
+  <!-- 頁首 -->
+  <section class="h-100">   <!-- nav 高度 -->
+    <section class="header container d-flex" > <!-- 外容 -->
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between " > <!-- 導航列 -->
+          <i class="material-icons d-lg-none ">dehaze</i>
+          <a class="navbar-brand mr-lg-auto " href="./index.html">
+              <h4 class="logoText">Craftsman</h4>
+          </a>
+
+          <ul class="navbar-nav d-flex align-items-center menuList">
+            <li class="nav-item active mr-lg-7 d-lg-block pt-0" >
+                <a class="nav-link" href="#" >Product</a>
+                <!-- <i class="material-icons downArrow__icon">keyboard_arrow_down</i> -->
+            </li>
+
+            <li class="nav-item mr-lg-7 d-lg-block">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+
+            <li class="nav-item mr-lg-7 d-lg-block">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+
+            <li class="shopping__li row">
+                <!-- <a href="#" class="backArrow col-6">
+                    <i class="material-icons backArrow__icon">keyboard_arrow_left</i>
+                </a> -->
+                <a href="#" class="col-6 col-lg-12 text-right">
+                    <i class="material-icons shopping__icon">shopping_cart</i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </section>
+
+
+
+  <%- contents %>
+
+  <!-- 頁尾 -->
+  <footer class="container">
+    頁尾
+  </footer>
+
+  <!-- 外加js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
