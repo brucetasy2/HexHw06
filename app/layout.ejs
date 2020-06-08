@@ -21,45 +21,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js"></script>
   <!-- 主要的 JS -->
   <script src="./assets/js/all.js"></script>
-
-
 </head>
 
 <body>
   <!-- 頁首 -->
-  <section class="h-100">   <!-- nav 高度 -->
-    <section class="header container d-flex" > <!-- 外容 -->
-        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between " > <!-- 導航列 -->
-          <i class="material-icons d-lg-none ">dehaze</i>
-          <a class="navbar-brand mr-lg-auto " href="./index.html">
-              <h4 class="logoText">Craftsman</h4>
-          </a>
+  <div class="header container">
+    <div class="row">
+      <div class="col-6 d-flex justify-content-center justify-content-lg-start">
+        <h1 class="raleway mb-0"><a href="index.html">Craftsman</a></h1>
+      </div>
 
-          <ul class="navbar-nav d-flex align-items-center menuList">
-            <li class="nav-item active mr-lg-7 d-lg-block pt-0" >
-                <a class="nav-link" href="#" >Product</a>
-                <!-- <i class="material-icons downArrow__icon">keyboard_arrow_down</i> -->
-            </li>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+        <div class="headerLink">
+          <div class="linkInner d-flex justify-content-end align-items-center roboto">
+            <h3><a href="#">Product</a></h3>
+            <h3><a href="#">Blog</a></h3>
+            <h3><a href="#">Contact</a></h3>
+            <a href="#" class="cart"><span class="material-icons" data-toggle="modal" data-target="#exampleModal">shopping_cart</span></a>
+          </div>
+        </div>
+      </div>
 
-            <li class="nav-item mr-lg-7 d-lg-block">
-                <a class="nav-link" href="#">Blog</a>
-            </li>
+    </div>
+  </div>
 
-            <li class="nav-item mr-lg-7 d-lg-block">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-
-            <li class="shopping__li row">
-                <!-- <a href="#" class="backArrow col-6">
-                    <i class="material-icons backArrow__icon">keyboard_arrow_left</i>
-                </a> -->
-                <a href="#" class="col-6 col-lg-12 text-right">
-                    <i class="material-icons shopping__icon">shopping_cart</i>
-                </a>
-            </li>
-        </ul>
-        </nav>
-    </section>
 
 
 
