@@ -34,6 +34,7 @@ $grays: map-merge(
   $grays
 );
 
+$black :  #000000 !default;  //客製
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -49,6 +50,7 @@ $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
+    "black":      $black, //客製
     "blue":       $blue,
     "indigo":     $indigo,
     "purple":     $purple,
@@ -67,13 +69,13 @@ $colors: map-merge(
 );
 
 
-$primary:       #2A8356 !default;  //$blue !default; 被修改
+$primary:       $black !default;  //$blue !default; //客製
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $gray-700 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -86,8 +88,8 @@ $theme-colors: map-merge(
     "info":       $info,
     "warning":    $warning,
     "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    "light":      $gray-700 ,
+    "dark":       $dark,
   ),
   $theme-colors
 );
@@ -142,15 +144,12 @@ $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
-    0: 0,    
-    1:4px,  // 1: ($spacer * .25), 被修改
-    2:8px,  // 2: ($spacer * .5),
-    3:16px, // 3: $spacer,
-    4:24px, // 4: ($spacer * 1.5),
-    5:32px, // 5: ($spacer * 3)
-    6:40px,
-    7:48px,
-    8:72px,
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
   ),
   $spacers
 );
@@ -302,12 +301,19 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 3 !default;  // 2.5 !default; 被修改
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;     
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+
+$h1-font-size:                $font-size-base * 3 !default;     // 48px 客製
+$h2-font-size:                $font-size-base * 2 !default;     // 32px
+$h3-font-size:                $font-size-base * 1.75 !default;  // 28PX
+$h4-font-size:                $font-size-base * 1.5 !default;   // 24px
+$h5-font-size:                $font-size-base * 1 !default;     // 16px
+$h6-font-size:                $font-size-base * 0.875 !default; // 14px
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
@@ -315,10 +321,17 @@ $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
-$display4-size:               3.5rem !default;
+// $display1-size:               6rem !default;
+// $display2-size:               5.5rem !default;
+// $display3-size:               4.5rem !default;
+// $display4-size:               3.5rem !default;
+
+$display1-size:               3rem !default;  //客製
+$display2-size:               2rem !default;
+$display3-size:               1.75rem !default;
+$display4-size:               1.5rem !default;
+$display5-size:               1rem !default;
+$display6-size:               0.875rem !default;
 
 $display1-weight:             300 !default;
 $display2-weight:             300 !default;

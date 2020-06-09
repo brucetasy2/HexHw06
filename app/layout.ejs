@@ -26,18 +26,18 @@
 <body>
   <!-- 頁首 -->
   <div class="header container">
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-6 d-flex justify-content-center justify-content-lg-start">
-        <h1 class="raleway mb-0"><a href="index.html">Craftsman</a></h1>
+        <h4 class="raleway mb-0"><a href="index.html" >Craftsman</a></h4>
       </div>
 
-      <div class="col-6 d-flex justify-content-end align-items-center">
+      <div class="col-6 d-flex justify-content-end align-items-center ">
         <div class="headerLink">
-          <div class="linkInner d-flex justify-content-end align-items-center roboto">
-            <h3><a href="#">Product</a></h3>
-            <h3><a href="#">Blog</a></h3>
-            <h3><a href="#">Contact</a></h3>
-            <a href="#" class="cart"><span class="material-icons" data-toggle="modal" data-target="#exampleModal">shopping_cart</span></a>
+          <div class="d-flex justify-content-end align-items-center roboto">
+            <h5 class="mx-4 "><a href="#" class="text-light">Product</a></h5>
+            <h5 class="mx-4 "><a href="#">Blog</a></h5>
+            <h5 class="mx-4 "><a href="#">Contact</a></h3>
+            <a href="#" class="cart ml-4 "><span class="material-icons" data-toggle="modal" data-target="#exampleModal">shopping_cart</span></a>
           </div>
         </div>
       </div>
@@ -51,8 +51,23 @@
   <%- contents %>
 
   <!-- 頁尾 -->
-  <footer class="container">
-    頁尾
+  <footer>
+    <div class="container roboto">
+      <div class="row">
+        <div class="col-12 d-lg-flex justify-content-lg-between">
+          <div class="d-lg-flex">
+            <h4 class="raleway mainLogo"><a href="index.html" class="pr-3 text-light">Craftsman</a></h4>
+            <p class="d-none d-lg-block mt-1 display-5 text-light">© 2020. All Rights Reserved.</p>
+          </div>
+
+          <ul class="d-flex flex-column flex-lg-row">
+            <li class="d-flex align-items-lg-center mx-4"><a href="#" class="text-light">Purchase Policy</a></li>
+            <li class="d-flex align-items-lg-center mx-4"><a href="#" class="text-light">Privacy Policy</a></li>
+            <li class="d-flex align-items-lg-center ml-4"><a href="#" class="text-light">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
   </footer>
 
   <!-- 外加js -->
