@@ -28,11 +28,12 @@
 .lifeStyleBg {
   background: url(../images/tom-crew-5HRCkrSs9Dk-unsplash.jpg) center no-repeat;
   // position: absolute;
-  top: -30px;
+  top: -90px;
   bottom: 0;
   background-size: cover;
   width: 100%;
   height:800px;
+  z-index: -1;
 }
 
 .offers {
