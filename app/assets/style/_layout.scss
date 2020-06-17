@@ -5,7 +5,12 @@
 }
 
 .hyperTag {
-  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
+  a:hover{
+      color: #ffffff;
+  }
 }
 
 .hyperTag2 {
